@@ -50,6 +50,7 @@ const Register = (props) => {
 					}}
 				/>{" "}
 				<br />
+				<br />
 				<Button
 					variant="contained"
 					color="primary"
