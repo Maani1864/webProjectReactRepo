@@ -1,8 +1,6 @@
 import React from "react";
 import pic1 from "laptop.jpg";
 
-console.log(pic1);
-
 const LandingPage = () => {
 	return (
 		<div>
