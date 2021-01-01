@@ -1,5 +1,5 @@
 import React from "react";
-import pic1 from "./laptop.jpg";
+import pic1 from "laptop.jpg";
 
 console.log(pic1);
 
