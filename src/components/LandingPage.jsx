@@ -4,7 +4,7 @@ import React from "react";
 const LandingPage = () => {
 	return (
 		<div>
-			<h1>Landing Page</h1>
+			<h1>Landiing Page</h1>
 			<img src="/public/laptop.jpg" alt="laptop" />
 		</div>
 	);
