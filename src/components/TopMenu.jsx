@@ -85,7 +85,7 @@ const TopMenu = () => {
 							window.location.reload();
 						}}
 					>
-						LogOut {userService.getLoggedInUser().name}
+						LogOut {userService.getLoggedInUser().Name}
 					</Button>
 				)}
 				<div className={classes.search}>

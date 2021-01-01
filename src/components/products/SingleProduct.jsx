@@ -9,7 +9,7 @@ const SingleProduct = (props) => {
 	return (
 		<Grid item xs={4}>
 			<h2>
-				{product.name}{" "}
+				{product.Name}{" "}
 				{userService.isAdmin() && (
 					<>
 						<Button
@@ -42,7 +42,8 @@ const SingleProduct = (props) => {
 					</>
 				)}
 			</h2>
-			<p>{product.price}</p>
+			<p>{product.Model}</p>
+			<p>{product.Price}</p>
 			<hr />
 		</Grid>
 	);

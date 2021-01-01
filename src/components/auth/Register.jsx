@@ -16,16 +16,16 @@ const useStyles = makeStyles((theme) => ({
 }));
 const Register = (props) => {
 	const classes = useStyles();
-	const [email, setEmail] = React.useState();
-	const [password, setPassword] = React.useState();
-	const [name, setName] = React.useState("usman");
+	const [Email, setEmail] = React.useState();
+	const [Password, setPassword] = React.useState();
+	const [Name, setName] = React.useState();
 	return (
 		<div className={classes.container}>
 			<div className={classes.child}>
 				<TextField
 					label="Name"
 					fullWidth
-					value={name}
+					value={Name}
 					onChange={(e) => {
 						setName(e.target.value);
 					}}
@@ -34,7 +34,7 @@ const Register = (props) => {
 				<TextField
 					label="email"
 					fullWidth
-					value={email}
+					value={Email}
 					onChange={(e) => {
 						setEmail(e.target.value);
 					}}
@@ -44,7 +44,7 @@ const Register = (props) => {
 					label="password"
 					type="password"
 					fullWidth
-					value={password}
+					value={Password}
 					onChange={(e) => {
 						setPassword(e.target.value);
 					}}
@@ -55,7 +55,7 @@ const Register = (props) => {
 					color="primary"
 					onClick={(e) => {
 						userService
-							.register(name, email, password)
+							.register(Name, Email, Password)
 							.then((data) => {
 								console.log(data);
 								props.history.push("/login");

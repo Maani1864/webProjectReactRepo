@@ -35,7 +35,7 @@ const Products = (props) => {
 	};
 	return (
 		<div>
-			<h1>All Available abc Products</h1>
+			<h1>All Products</h1>
 			{userService.isLoggedIn() && (
 				<Fab
 					color="black"
