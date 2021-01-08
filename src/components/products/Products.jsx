@@ -16,6 +16,9 @@ const useStyles = makeStyles((theme) => ({
 	products: {
 		paddingLeft: "4%",
 	},
+	addprdct: {
+		paddingBottom: "2%",
+	},
 }));
 
 const Products = (props) => {
@@ -52,7 +55,7 @@ const Products = (props) => {
 					>
 						<AddIcon />
 					</Fab>
-					<p className={classes.addBtn}>Add Product</p>
+					<p className={classes.addprdct}>Add Product</p>
 				</div>
 			)}
 			<br />
