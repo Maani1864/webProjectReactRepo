@@ -14,7 +14,8 @@ const useStyles = makeStyles((theme) => ({
 		textAlign: "center",
 	},
 	products: {
-		padding: "0 0 4% 4%",
+		paddingLeft: "4%",
+		paddingBottom: "2%",
 	},
 	addprdct: {
 		position: "absolute",
