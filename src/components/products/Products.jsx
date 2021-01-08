@@ -10,6 +10,9 @@ const useStyles = makeStyles((theme) => ({
 		position: "absolute",
 		right: theme.spacing(5),
 	},
+	heading: {
+		textAlign: "center",
+	},
 }));
 
 const Products = (props) => {
@@ -35,7 +38,7 @@ const Products = (props) => {
 	};
 	return (
 		<div>
-			<h1>All Products</h1>
+			<h1 className={classes.heading}>Available Products</h1>
 			{userService.isLoggedIn() && (
 				<Fab
 					color="black"
