@@ -42,8 +42,8 @@ const SingleProduct = (props) => {
 					</>
 				)}
 			</h3>
-			<p>{product.Model}</p>
-			<p>{product.Price}</p>
+			<h3>{product.Model}</h3>
+			<h3>{product.Price}</h3>
 			<br />
 			<hr />
 			<br />

@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	heading: {
 		textAlign: "center",
+		paddingTop: "2%",
 	},
 	products: {
 		paddingLeft: "4%",
@@ -37,9 +38,7 @@ const Products = (props) => {
 				console.log(err);
 			});
 	};
-	// getData();
 	React.useEffect(getData, []);
-	// console.log("Inside Products Component");
 	const handleNewProductClick = () => {
 		console.log(props);
 		props.history.push("/products/new");
