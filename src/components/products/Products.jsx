@@ -53,8 +53,11 @@ const Products = (props) => {
 			<br />
 			<br />
 			<p className={classes.addBtn}>Add Product</p>
+			<br />
+			<br />
+			<br />
 			{products.length == 0 ? (
-				<p>There are no products</p>
+				<h6 className={classes.heading}>There are no products</h6>
 			) : (
 				<div>
 					{products.map((product, index) => (
