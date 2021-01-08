@@ -52,7 +52,7 @@ const Products = (props) => {
 					>
 						<AddIcon />
 					</Fab>
-					<p>Add Product</p>
+					<p className={classes.addBtn}>Add Product</p>
 				</div>
 			)}
 			<br />
