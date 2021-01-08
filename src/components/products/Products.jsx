@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
 		textAlign: "center",
 	},
 	products: {
-		paddingLeft: "4%",
+		padding: "0 0 4% 4%",
 	},
 	addprdct: {
 		position: "absolute",
@@ -57,6 +57,7 @@ const Products = (props) => {
 					>
 						<AddIcon />
 					</Fab>
+					<p className={classes.addprdct}>Add Product</p>
 				</div>
 			)}
 			<br />
