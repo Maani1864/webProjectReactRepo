@@ -14,7 +14,8 @@ const useStyles = makeStyles((theme) => ({
 		textAlign: "center",
 	},
 	products: {
-		paddingLeft: "1px",
+		paddingLeft: "6px",
+		paddingBottom: "6px",
 	},
 }));
 
