@@ -13,6 +13,9 @@ const useStyles = makeStyles((theme) => ({
 	heading: {
 		textAlign: "center",
 	},
+	products: {
+		paddingLeft: "1px",
+	},
 }));
 
 const Products = (props) => {
@@ -55,11 +58,10 @@ const Products = (props) => {
 			<p className={classes.addBtn}>Add Product</p>
 			<br />
 			<br />
-			<br />
 			{products.length == 0 ? (
-				<h6 className={classes.heading}>There are no products</h6>
+				<h2 className={classes.heading}>There are no products</h2>
 			) : (
-				<div>
+				<div className={classes.products}>
 					{products.map((product, index) => (
 						<SingleProduct key={index} product={product} onDelete={getData} />
 					))}
