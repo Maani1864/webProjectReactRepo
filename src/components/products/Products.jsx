@@ -67,7 +67,7 @@ const Products = (props) => {
 			{products.length == 0 ? (
 				<h2 className={classes.heading}>There are no products</h2>
 			) : (
-				<divclassName={classes.heading}>
+				<div className={classes.heading}>
 					{products.map((product, index) => (
 						<SingleProduct key={index} product={product} onDelete={getData} />
 					))}
