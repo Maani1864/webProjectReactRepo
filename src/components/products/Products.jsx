@@ -15,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
 	},
 	products: {
 		paddingLeft: "4%",
-		paddingBottom: "4%",
 	},
 }));
 
@@ -44,19 +43,20 @@ const Products = (props) => {
 		<div>
 			<h1 className={classes.heading}>Available Products</h1>
 			{userService.isLoggedIn() && (
-				<Fab
-					color="black"
-					aria-label="add"
-					className={classes.addBtn}
-					onClick={handleNewProductClick}
-				>
-					<AddIcon />
-				</Fab>
+				<div>
+					<Fab
+						color="black"
+						aria-label="add"
+						className={classes.addBtn}
+						onClick={handleNewProductClick}
+					>
+						<AddIcon />
+					</Fab>
+					<p>Add Product</p>
+				</div>
 			)}
 			<br />
-			<br />
-			<br />
-			<p className={classes.addBtn}>Add Product</p>
+
 			<br />
 			<br />
 			{products.length == 0 ? (
