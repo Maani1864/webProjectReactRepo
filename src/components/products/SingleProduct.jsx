@@ -45,6 +45,8 @@ const SingleProduct = (props) => {
 			<p>{product.Model}</p>
 			<p>{product.Price}</p>
 			<hr />
+			<br />
+			<br />
 		</Grid>
 	);
 };

@@ -15,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
 	},
 	products: {
 		paddingLeft: "4%",
-		paddingBottom: "2%",
 	},
 	addprdct: {
 		position: "absolute",
@@ -68,7 +67,7 @@ const Products = (props) => {
 			{products.length == 0 ? (
 				<h2 className={classes.heading}>There are no products</h2>
 			) : (
-				<div className={classes.products}>
+				<div>
 					{products.map((product, index) => (
 						<SingleProduct key={index} product={product} onDelete={getData} />
 					))}
