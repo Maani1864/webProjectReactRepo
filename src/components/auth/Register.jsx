@@ -53,7 +53,7 @@ const Register = (props) => {
 				<br />
 				<Button
 					variant="contained"
-					color="primary"
+					color="dark"
 					onClick={(e) => {
 						userService
 							.register(Name, Email, Password)
