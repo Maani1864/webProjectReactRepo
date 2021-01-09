@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	searchIcon: {
-		padding: theme.spacing(0, 20),
+		padding: theme.spacing(0, 18),
 		height: "100%",
 		position: "absolute",
 		pointerEvents: "none",
