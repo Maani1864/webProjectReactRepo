@@ -15,7 +15,7 @@ import userService from "../services/UserService";
 const useStyles = makeStyles((theme) => ({
 	link: {
 		color: "white",
-		paddingRight: "1rem",
+		paddingRight: "2rem",
 	},
 	navbr: {
 		backgroundColor: "black",
@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	searchIcon: {
-		padding: theme.spacing(0, 8),
+		padding: theme.spacing(0, 2),
 		height: "100%",
 		position: "absolute",
 		pointerEvents: "none",
