@@ -24,11 +24,11 @@ const useStyles = makeStyles((theme) => ({
 	search: {
 		position: "relative",
 		borderRadius: theme.shape.borderRadius,
-		backgroundColor: fade(theme.palette.common.white, 0.15),
+		backgroundColor: fade(theme.palette.common.white, 0.35),
 		"&:hover": {
-			backgroundColor: fade(theme.palette.common.white, 0.25),
+			backgroundColor: fade(theme.palette.common.white, 0.45),
 		},
-		//marginLeft: 0,
+		marginLeft: 0,
 		width: "100%",
 		[theme.breakpoints.up("sm")]: {
 			marginLeft: theme.spacing(1),
@@ -97,7 +97,6 @@ const TopMenu = () => {
 						<SearchIcon />
 					</div>
 					<InputBase
-						style={{ marginRight: 0 }}
 						placeholder="Search…"
 						classes={{
 							root: classes.inputRoot,
