@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
 		"&:hover": {
 			backgroundColor: fade(theme.palette.common.white, 0.25),
 		},
-		paddingLeft: "8%",
+		marginLeft: 0,
 		width: "100%",
 		[theme.breakpoints.up("sm")]: {
 			marginLeft: theme.spacing(1),
