@@ -18,6 +18,10 @@ const useStyles = makeStyles((theme) => ({
 		paddingRight: "1rem",
 		backgroundColor: "black",
 	},
+	navbr: {
+		backgroundColor: "black",
+		position: "static",
+	},
 	search: {
 		position: "relative",
 		borderRadius: theme.shape.borderRadius,
@@ -46,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
 const TopMenu = () => {
 	const classes = useStyles();
 	return (
-		<AppBar position="static">
+		<AppBar className={classes.navbr}>
 			<Toolbar>
 				<Typography variant="h6">
 					<Link to="/" className={classes.link}>
