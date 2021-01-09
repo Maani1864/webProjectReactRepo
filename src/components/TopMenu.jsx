@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
 		"&:hover": {
 			backgroundColor: fade(theme.palette.common.white, 0.25),
 		},
-		marginLeft: 0,
+		//marginLeft: 0,
 		width: "100%",
 		[theme.breakpoints.up("sm")]: {
 			marginLeft: theme.spacing(1),
@@ -97,7 +97,7 @@ const TopMenu = () => {
 						<SearchIcon />
 					</div>
 					<InputBase
-						style={{ paddingRight: "2rem" }}
+						style={{ paddingRight: 0 }}
 						placeholder="Search…"
 						classes={{
 							root: classes.inputRoot,
