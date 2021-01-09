@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
 	link: {
 		color: "white",
 		paddingRight: "1rem",
+		backgroundColor: "black",
 	},
 	search: {
 		position: "relative",

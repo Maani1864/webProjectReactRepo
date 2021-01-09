@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 	addprdct: {
 		position: "absolute",
 		right: theme.spacing(5),
-		paddingTop: "4%",
+		paddingTop: "5%",
 	},
 }));
 
