@@ -97,6 +97,7 @@ const TopMenu = () => {
 						<SearchIcon />
 					</div>
 					<InputBase
+						style={{ paddingRight: "2rem" }}
 						placeholder="Search…"
 						classes={{
 							root: classes.inputRoot,
