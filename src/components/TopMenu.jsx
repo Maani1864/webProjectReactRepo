@@ -16,7 +16,6 @@ const useStyles = makeStyles((theme) => ({
 	link: {
 		color: "white",
 		paddingRight: "1rem",
-		backgroundColor: "black",
 	},
 	navbr: {
 		backgroundColor: "black",
@@ -84,7 +83,7 @@ const TopMenu = () => {
 				) : (
 					<Button
 						variant="contained"
-						color="primary"
+						color="dark"
 						onClick={(e) => {
 							userService.logout();
 							window.location.reload();
