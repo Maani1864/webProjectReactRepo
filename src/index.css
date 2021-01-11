@@ -12,7 +12,7 @@ p {
 }
 .container {
 	max-width: 1400px;
-	margin: auto;
+	margin: 0;
 	padding-left: 25px;
 	padding-right: 25px;
 }
@@ -36,7 +36,6 @@ p {
 	margin: 25px 0;
 }
 .header {
-	margin: 0;
 	background: radial-gradient(#fff, #ffd6d6);
 }
 .category {
