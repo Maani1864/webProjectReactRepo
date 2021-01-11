@@ -5,7 +5,7 @@ import { withRouter } from "react-router";
 import userService from "../../services/UserService";
 //import classes from "*.module.css";
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
 	pFonts: {
 		paddingLeft: "28%",
 		fontSize: "25px",
@@ -13,7 +13,7 @@ const useStyles = makeStyles(() => ({
 }));
 
 const SingleProduct = (props) => {
-	const classes = useStyles;
+	const classes = useStyles();
 	const { product, onDelete, history } = props;
 	console.log(props);
 	return (
