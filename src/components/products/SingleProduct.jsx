@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const SingleProduct = (props) => {
+	const classes = useStyles;
 	const { product, onDelete, history } = props;
 	console.log(props);
 	return (
