@@ -36,6 +36,7 @@ p {
 	margin: 25px 0;
 }
 .header {
+	margin: 0px 0px auto;
 	background: radial-gradient(#fff, #ffd6d6);
 }
 .category {
