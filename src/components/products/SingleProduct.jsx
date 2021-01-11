@@ -8,7 +8,7 @@ const SingleProduct = (props) => {
 	console.log(props);
 	return (
 		<Grid item xs={4}>
-			<p style={{ paddingLeft: "28%" }}>
+			<p style={({ paddingLeft: "28%" }, { fontSize: "25px" })}>
 				{product.Name}{" "}
 				{userService.isAdmin() && (
 					<>
@@ -42,10 +42,12 @@ const SingleProduct = (props) => {
 					</>
 				)}
 			</p>
-			<p style={({ paddingLeft: "28%" }, { fontSize: "50px" })}>
+			<p style={({ paddingLeft: "28%" }, { fontSize: "25px" })}>
 				{product.Model}
 			</p>
-			<p style={{ paddingLeft: "28%" }}>{product.Price}</p>
+			<p style={({ paddingLeft: "28%" }, { fontSize: "25px" })}>
+				{product.Price}
+			</p>
 			<br />
 			<hr />
 			<br />
