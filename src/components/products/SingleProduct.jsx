@@ -5,10 +5,10 @@ import { withRouter } from "react-router";
 import userService from "../../services/UserService";
 //import classes from "*.module.css";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
 	pFonts: {
-		fontSize: 50,
-		paddingLeft: 50,
+		paddingLeft: "28%",
+		fontSize: "25px",
 	},
 }));
 
