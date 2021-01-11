@@ -7,7 +7,7 @@ import userService from "../../services/UserService";
 
 const useStyles = makeStyles((theme) => ({
 	pFonts: {
-		fontSize: "29px",
+		fontSize: "33px",
 		paddingLeft: "50px",
 	},
 }));
