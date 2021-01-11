@@ -3,7 +3,7 @@ import { Grid, Button, makeStyles } from "@material-ui/core";
 import productService from "./../../services/ProductsService";
 import { withRouter } from "react-router";
 import userService from "../../services/UserService";
-import classes from "*.module.css";
+//import classes from "*.module.css";
 
 const useStyles = makeStyles((theme) => ({
 	pFonts: {
