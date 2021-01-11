@@ -1,14 +1,23 @@
 import React from "react";
-import { Grid, Button } from "@material-ui/core";
+import { Grid, Button, makeStyles } from "@material-ui/core";
 import productService from "./../../services/ProductsService";
 import { withRouter } from "react-router";
 import userService from "../../services/UserService";
+import classes from "*.module.css";
+
+const useStyles = makeStyles((theme) => ({
+	pFonts: {
+		paddingLeft: "28%",
+		fontSize: "22px",
+	},
+}));
+
 const SingleProduct = (props) => {
 	const { product, onDelete, history } = props;
 	console.log(props);
 	return (
 		<Grid item xs={4}>
-			<p style={({ paddingLeft: "28%" }, { fontSize: "25px" })}>
+			<p className={classes.pFonts}>
 				{product.Name}{" "}
 				{userService.isAdmin() && (
 					<>
@@ -42,12 +51,8 @@ const SingleProduct = (props) => {
 					</>
 				)}
 			</p>
-			<p style={({ paddingLeft: "28%" }, { fontSize: "25px" })}>
-				{product.Model}
-			</p>
-			<p style={({ paddingLeft: "28%" }, { fontSize: "25px" })}>
-				{product.Price}
-			</p>
+			<p className={classes.pFonts}>{product.Model}</p>
+			<p className={classes.pFonts}>{product.Price}</p>
 			<br />
 			<hr />
 			<br />
