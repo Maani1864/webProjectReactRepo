@@ -42,7 +42,7 @@ const SingleProduct = (props) => {
 					</>
 				)}
 			</p>
-			<p style={({ paddingLeft: "28%" }, { fontSize: "9px" })}>
+			<p style={({ paddingLeft: "28%" }, { fontSize: "50px" })}>
 				{product.Model}
 			</p>
 			<p style={{ paddingLeft: "28%" }}>{product.Price}</p>
