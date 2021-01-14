@@ -26,7 +26,7 @@ const SingleProduct = (props) => {
 				className={classes.pding}
 				src={product.Picture}
 				alt="Pic"
-				width="90%"
+				width="80%"
 			></img>
 			<p>Product_Name: </p>
 			<p className={classes.pFonts}>{product.Name}</p>
