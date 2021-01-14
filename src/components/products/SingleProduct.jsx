@@ -10,7 +10,7 @@ const useStyles = makeStyles(() => ({
 		fontSize: "18px",
 	},
 	pding: {
-		paddingLeft: "17%",
+		paddingLeft: "16%",
 	},
 	bttn: {
 		marginLeft: "20%",
@@ -21,7 +21,7 @@ const SingleProduct = (props) => {
 	const classes = useStyles();
 	const { product, onDelete, history } = props;
 	return (
-		<Grid item xs={4}>
+		<Grid item xs={6}>
 			<img
 				className={classes.pding}
 				src={product.Picture}
