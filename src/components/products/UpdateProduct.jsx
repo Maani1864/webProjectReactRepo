@@ -7,7 +7,7 @@ import Admin from "../auth/Admin";
 const useStyles = makeStyles(() => ({
 	heading: {
 		textAlign: "center",
-		paddingTop: "3%",
+		paddingTop: "2%",
 	},
 }));
 
