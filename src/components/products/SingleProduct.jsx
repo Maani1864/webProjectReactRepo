@@ -7,7 +7,7 @@ import userService from "../../services/UserService";
 const useStyles = makeStyles(() => ({
 	pFonts: {
 		paddingLeft: "28%",
-		fontSize: "22px",
+		fontSize: "20px",
 	},
 	pding: {
 		paddingLeft: "28%",
@@ -64,7 +64,6 @@ const SingleProduct = (props) => {
 					</Button>
 				</>
 			)}
-			<br />
 			<br />
 			<br />
 			<hr />
