@@ -49,22 +49,18 @@ const Products = (props) => {
 			<h1 className={classes.heading}>Available Products</h1>
 			{userService.isLoggedIn() && (
 				<div>
-					<div>
-						<Fab
-							color="black"
-							aria-label="add"
-							className={classes.addBtn}
-							onClick={handleNewProductClick}
-						>
-							<AddIcon />
-						</Fab>
-					</div>
-					<div>
-						<p className={classes.addprdct}>Add Product</p>
-					</div>
+					<Fab
+						color="black"
+						aria-label="add"
+						className={classes.addBtn}
+						onClick={handleNewProductClick}
+					>
+						<AddIcon />
+					</Fab>
 				</div>
 			)}
 			<br />
+
 			<br />
 			<br />
 			{products.length == 0 ? (
