@@ -21,7 +21,7 @@ const SingleProduct = (props) => {
 	const classes = useStyles();
 	const { product, onDelete, history } = props;
 	return (
-		<Grid item xs={6}>
+		<Grid item xs={4}>
 			<img
 				className={classes.pding}
 				src={product.Picture}
