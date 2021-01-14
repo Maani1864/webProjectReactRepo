@@ -7,10 +7,10 @@ import userService from "../../services/UserService";
 const useStyles = makeStyles(() => ({
 	pFonts: {
 		paddingLeft: "28%",
-		fontSize: "20px",
+		fontSize: "18px",
 	},
 	pding: {
-		paddingLeft: "20%",
+		paddingLeft: "17%",
 	},
 	bttn: {
 		marginLeft: "20%",
