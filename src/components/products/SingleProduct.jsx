@@ -9,6 +9,9 @@ const useStyles = makeStyles(() => ({
 		paddingLeft: "28%",
 		fontSize: "22px",
 	},
+	pding: {
+		paddingLeft: "28%",
+	},
 }));
 
 const SingleProduct = (props) => {
@@ -16,7 +19,12 @@ const SingleProduct = (props) => {
 	const { product, onDelete, history } = props;
 	return (
 		<Grid item xs={4}>
-			<img className={classes.pFonts} src={product.Picture} alt="Pic"></img>
+			<img
+				className={classes.pding}
+				src={product.Picture}
+				alt="Pic"
+				width="110%"
+			></img>
 			<p>Product_Name: </p>
 			<p className={classes.pFonts}>{product.Name}</p>
 			<p>Product_Model: </p>
@@ -27,7 +35,7 @@ const SingleProduct = (props) => {
 			{userService.isAdmin() && (
 				<>
 					<Button
-						className={classes.pFonts}
+						className={classes.pding}
 						variant="contained"
 						color="dark"
 						onClick={(e) => {
