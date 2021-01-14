@@ -17,6 +17,8 @@ const SingleProduct = (props) => {
 	console.log(props);
 	return (
 		<Grid item xs={4}>
+			<img src={product.Picture} alt="Product" width="50%"></img>
+			<p>Product_Name: </p>
 			<p className={classes.pFonts}>
 				{product.Name}{" "}
 				{userService.isAdmin() && (
@@ -51,7 +53,9 @@ const SingleProduct = (props) => {
 					</>
 				)}
 			</p>
+			<p>Product_Model: </p>
 			<p className={classes.pFonts}>{product.Model}</p>
+			<p>Product_Price: </p>
 			<p className={classes.pFonts}>{product.Price}</p>
 			<br />
 			<hr />

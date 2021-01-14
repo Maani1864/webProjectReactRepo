@@ -76,7 +76,7 @@ const TopMenu = () => {
 						</Typography>
 						<Typography variant="h6">
 							<Link to="/register" className={classes.link}>
-								Register
+								Sign-Up
 							</Link>
 						</Typography>
 					</>

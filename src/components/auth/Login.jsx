@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { TextField, Button } from "@material-ui/core";
 import userService from "../../services/UserService";
+import { toast } from "react-toastify";
 
 const useStyles = makeStyles((theme) => ({
 	container: {
@@ -53,6 +54,9 @@ const Login = (props) => {
 							})
 							.catch((err) => {
 								console.log(err);
+								toast.error(err.response.data, {
+									position: toast.POSITION.TOP_CENTER,
+								});
 							});
 					}}
 				>
