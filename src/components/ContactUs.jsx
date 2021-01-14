@@ -7,7 +7,7 @@ const useStyles = makeStyles(() => ({
 		paddingTop: "2%",
 	},
 	pFonts: {
-		marginLeft: "24%",
+		marginLeft: "20%",
 		fontSize: "18px",
 	},
 }));
@@ -22,7 +22,7 @@ const ContactUs = () => {
 			<br />
 			<p className={classes.pFonts}>Contact No: +92xxx xxxxxxx</p>
 			<br />
-			<hr style={{ width: "15%", marginLeft: "24%" }} />
+			<hr style={{ width: "15%", marginLeft: "20%" }} />
 			<br />
 			<p className={classes.pFonts}>Gmail: xxxxxxx@gmail.com</p>
 			<br />
