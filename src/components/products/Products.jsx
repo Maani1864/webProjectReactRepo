@@ -60,7 +60,6 @@ const Products = (props) => {
 				</div>
 			)}
 			<br />
-
 			<br />
 			<br />
 			{products.length == 0 ? (
