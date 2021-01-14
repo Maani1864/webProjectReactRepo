@@ -16,7 +16,12 @@ const SingleProduct = (props) => {
 	const { product, onDelete, history } = props;
 	return (
 		<Grid item xs={4}>
-			<img src={product.Picture} alt="Pic" width="50%"></img>
+			<img
+				className={classes.pFonts}
+				src={product.Picture}
+				alt="Pic"
+				width="60%"
+			></img>
 			<p>Product_Name: </p>
 			<p className={classes.pFonts}>
 				{product.Name}{" "}
