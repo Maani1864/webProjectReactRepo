@@ -10,7 +10,10 @@ const useStyles = makeStyles(() => ({
 		fontSize: "20px",
 	},
 	pding: {
-		paddingLeft: "28%",
+		paddingLeft: "20%",
+	},
+	bttn: {
+		marginLeft: "20%",
 	},
 }));
 
@@ -23,7 +26,7 @@ const SingleProduct = (props) => {
 				className={classes.pding}
 				src={product.Picture}
 				alt="Pic"
-				width="100%"
+				width="90%"
 			></img>
 			<p>Product_Name: </p>
 			<p className={classes.pFonts}>{product.Name}</p>
@@ -35,7 +38,7 @@ const SingleProduct = (props) => {
 			{userService.isAdmin() && (
 				<>
 					<Button
-						className={classes.pding}
+						className={classes.bttn}
 						variant="contained"
 						color="dark"
 						onClick={(e) => {
@@ -64,6 +67,7 @@ const SingleProduct = (props) => {
 					</Button>
 				</>
 			)}
+			<br />
 			<br />
 			<hr />
 			<br />
