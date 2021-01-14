@@ -1,10 +1,18 @@
 import React from "react";
-import { Grid, TextField, Button } from "@material-ui/core";
+import { Grid, TextField, Button, makeStyles } from "@material-ui/core";
 import axios from "axios";
 import productService from "../../services/ProductsService";
 import Admin from "../auth/Admin";
 
+const useStyles = makeStyles(() => ({
+	heading: {
+		textAlign: "center",
+		paddingTop: "2%",
+	},
+}));
+
 const UpdateProduct = (props) => {
+	const classes = useStyles();
 	const [Name, setName] = React.useState("");
 	const [Model, setModel] = React.useState("");
 	const [Price, setPrice] = React.useState(0);
@@ -22,7 +30,7 @@ const UpdateProduct = (props) => {
 		<Admin>
 			<Grid container spacing={3}>
 				<Grid item xs={12}>
-					<h1>Update Product</h1>
+					<h1 className={classes.heading}>Update Product</h1>
 				</Grid>
 				<Grid item xs={3}></Grid>
 				<Grid item xs={6}>

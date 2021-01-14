@@ -57,7 +57,9 @@ const Products = (props) => {
 					>
 						<AddIcon />
 					</Fab>
-					<p className={classes.addprdct}>Add Product</p>
+					<div>
+						<p className={classes.addprdct}>Add Product</p>
+					</div>
 				</div>
 			)}
 			<br />
