@@ -9,6 +9,9 @@ const useStyles = makeStyles(() => ({
 		paddingLeft: "28%",
 		fontSize: "22px",
 	},
+	imgpdding: {
+		paddingLeft: "28%",
+	},
 }));
 
 const SingleProduct = (props) => {
@@ -17,50 +20,49 @@ const SingleProduct = (props) => {
 	return (
 		<Grid item xs={4}>
 			<img
-				className={classes.pFonts}
+				className={classes.imgpdding}
 				src={product.Picture}
 				alt="Pic"
 				width="60%"
 			></img>
 			<p>Product_Name: </p>
-			<p className={classes.pFonts}>
-				{product.Name}{" "}
-				{userService.isAdmin() && (
-					<>
-						<Button
-							variant="contained"
-							color="dark"
-							onClick={(e) => {
-								console.log("navigate to update");
-								history.push("/products/update/" + product._id);
-							}}
-						>
-							Edit
-						</Button>{" "}
-						<Button
-							variant="contained"
-							color="dark"
-							onClick={(e) => {
-								productService
-									.deleteProduct(product._id)
-									.then((data) => {
-										console.log(data);
-										onDelete();
-									})
-									.catch((err) => {
-										console.log(err);
-									});
-							}}
-						>
-							Delete
-						</Button>
-					</>
-				)}
-			</p>
+			<p className={classes.pFonts}>{product.Name}</p>
 			<p>Product_Model: </p>
 			<p className={classes.pFonts}>{product.Model}</p>
 			<p>Product_Price: </p>
 			<p className={classes.pFonts}>{product.Price}</p>
+			<br />
+			{userService.isAdmin() && (
+				<>
+					<Button
+						variant="contained"
+						color="dark"
+						onClick={(e) => {
+							console.log("navigate to update");
+							history.push("/products/update/" + product._id);
+						}}
+					>
+						Edit
+					</Button>{" "}
+					<Button
+						variant="contained"
+						color="dark"
+						onClick={(e) => {
+							productService
+								.deleteProduct(product._id)
+								.then((data) => {
+									console.log(data);
+									onDelete();
+								})
+								.catch((err) => {
+									console.log(err);
+								});
+						}}
+					>
+						Delete
+					</Button>
+				</>
+			)}
 			<br />
 			<hr />
 			<br />
