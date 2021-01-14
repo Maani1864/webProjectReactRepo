@@ -23,7 +23,7 @@ const SingleProduct = (props) => {
 				className={classes.pding}
 				src={product.Picture}
 				alt="Pic"
-				width="110%"
+				width="100%"
 			></img>
 			<p>Product_Name: </p>
 			<p className={classes.pFonts}>{product.Name}</p>
@@ -64,7 +64,6 @@ const SingleProduct = (props) => {
 					</Button>
 				</>
 			)}
-			<br />
 			<br />
 			<hr />
 			<br />
