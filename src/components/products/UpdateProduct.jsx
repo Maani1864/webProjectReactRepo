@@ -64,7 +64,7 @@ const UpdateProduct = (props) => {
 				<Grid item xs={9}>
 					<Button
 						variant="contained"
-						color="primary"
+						color="dark"
 						onClick={(e) => {
 							productService
 								.updateProduct(id, { Name, Model, Price, Picture })
