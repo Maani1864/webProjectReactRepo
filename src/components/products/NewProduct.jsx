@@ -63,7 +63,7 @@ const NewProduct = (props) => {
 				<Grid item xs={9}>
 					<Button
 						variant="contained"
-						color="primary"
+						color="dark"
 						onClick={(e) => {
 							productService
 								.addProduct({ Name, Model, Price, Picture })
