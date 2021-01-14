@@ -14,10 +14,9 @@ const useStyles = makeStyles(() => ({
 const SingleProduct = (props) => {
 	const classes = useStyles();
 	const { product, onDelete, history } = props;
-	console.log(props);
 	return (
 		<Grid item xs={4}>
-			<img src={product.Picture} alt="Product" width="50%"></img>
+			<img src={product.Picture} alt="Pic" width="10%"></img>
 			<p>Product_Name: </p>
 			<p className={classes.pFonts}>
 				{product.Name}{" "}
